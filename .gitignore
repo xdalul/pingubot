@@ -39,4 +39,4 @@ build/
 .DS_Store
 
 ### Env File ###
-env
+src/main/resources/env
