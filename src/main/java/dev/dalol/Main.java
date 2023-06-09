@@ -23,7 +23,7 @@ public class Main {
 
 
         Dotenv dotenv = Dotenv.configure()
-                .directory("env")
+                .directory("src/main/resources")
                 .filename("env")
                 .load();
 
