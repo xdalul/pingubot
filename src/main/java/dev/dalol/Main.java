@@ -21,12 +21,6 @@ import static net.dv8tion.jda.api.entities.Activity.ActivityType.STREAMING;
 public class Main {
     public static void main(String[] args) {
 
-
-        Dotenv dotenv = Dotenv.configure()
-                .directory("env")
-                .filename("env")
-                .load();
-
         JDA jda = JDABuilder.createDefault(dotenv.get("TOKEN"))
                 .addEventListeners(new Grundgesetze(), new CasinoAnleitung(), new Creator(), new JoinEvent(), new LinkDisabler(), new Verify(), new UmfragenCommand(), new Update(), new Info(), new YouTubeCommand(), new RWGame(), new LiveCommand())
                 .setStatus(OnlineStatus.ONLINE)
