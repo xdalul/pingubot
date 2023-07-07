@@ -23,6 +23,7 @@ public class UmfragenCommand extends ListenerAdapter {
 
                 builder.setTitle("📊 | Umfrage");
                 builder.setDescription("\n> Heyho! Es ist eine neue Umfrage verfügbar! Reagiere unten, um abzustimmen. (*Bitte nur eins Auswählen.*)");
+                builder.setAuthor(e.getMember().getEffectiveName(), e.getMember().getAvatarUrl());
                 builder.setColor(0xff7530);
                 builder.setFooter("©️ Pinguincrew");
                 builder.setTimestamp(Instant.now());
