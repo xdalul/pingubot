@@ -52,7 +52,6 @@ public class Grundgesetze extends ListenerAdapter {
 
                 embedBuilder.setImage("https://i.imgur.com/EifIcAA.png");
                 embedBuilder.setColor(0xeb4034);
-
                 bauplan.setTitle("<:ban:1098645506638499871> | §1 Textkanäle");
                 bauplan.setDescription("\n[**§1.1**] Spammen ist nicht erlaubt.\n[**§1.2**] Es ist nicht erlaubt Teammitglieder zu pingen außer es ist ein Notfall wie von Bugs usw.\n[**§1.3**] Beleidigt keinen.\n[**§1.4**] Links sind nicht erlaubt.\n[**§1.5**] Bitte keine Eigenwerbung, also keine DC-Server links oder YT-Kanäle bewerben.\n[**§1.6**] Keine Sexistischen oder Pornografischen Bilder!\n[**§1.7**] Seid kein Krokodil (Krokodil = böse) xD\n[**§1.8**] Bitte schreibt eure Nachrichten in den Richtigen kanal rein also nicht irgendwie im Chat-Support \"erster\" schreiben.\n\nmehr ist noch in arbeit...");
                 bauplan.setColor(0xeb4034);
