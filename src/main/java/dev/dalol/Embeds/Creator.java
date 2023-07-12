@@ -14,13 +14,12 @@ public class Creator extends ListenerAdapter {
         if (event.getMessage().getContentStripped().equals("!creator")) {
             EmbedBuilder builder = new EmbedBuilder();
 
-            builder.setTitle("`\uD83C\uDFAC` | **Creator Rang**");
+            builder.setTitle("## `\uD83C\uDFAC` | **Creator Rang**");
             builder.setDescription("""
-                    
                     > Heyho! Willkommen mal wieder bei den Creator Rang Bewerbungen, diese werden diesmal wieder geändert. Ich red nicht mal so viel und komm sofort zur sache:""");
             builder.addField("<:icon_twitch:1093222615650406532> Twitch", "> 30 Follower \n> ca 2-3 Viewer pro Stream (**Getrackt durch <https://twitchtracker.com/>**)\n> Aktive Streams. (**Ausnahme einer bei Auszeit und Urlaub**)", false);
             builder.addField("<:icon_youtube:1093222617873387621> YouTube", "> 35 Abonnenten\n> ca. 120 Views im Monat (**Getrackt durch <https://socialblade.com/>**)\n> Aktiv Videos machen (**Ausnahme bei einer Auszeit und Urlaub.**)", false);
-            builder.addField("<:icon_outage:1093224000437637252> Kleine Information", "> Die Plattform \"Kick\" wird von uns nicht angenommen, wir möchten keine Streamer von einer Plattform die mit Geld von der Casino Plattform Steak bekommt.", false);
+            builder.addField("<:icon_outage:1093224000437637252> Kleine Information", "> Die Plattform \"Kick\" wird von un s nicht angenommen, wir möchten keine Streamer von einer Plattform die mit Geld von der Casino Plattform Steak bekommt.", false);
             builder.setColor(0xfc4e03);
             builder.setTimestamp(Instant.now());
             builder.setFooter("©️ Pinguincrew");
