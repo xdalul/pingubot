@@ -6,12 +6,13 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.time.Instant;
+import java.util.Objects;
 
 public class Info extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         if (event.getMessage().getContentStripped().equals("!info")) {
-            if (event.getMember().hasPermission(Permission.ADMINISTRATOR)) {
+            if (Objects.requireNonNull(event.getMember()).hasPermission(Permission.ADMINISTRATOR)) {
                 EmbedBuilder builder = new EmbedBuilder();
 
                 builder.setTitle("Rollen Information");

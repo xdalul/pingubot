@@ -7,7 +7,6 @@ import dev.dalol.Events.JoinEvent;
 import dev.dalol.Events.LinkDisabler;
 import dev.dalol.Commands.UmfragenCommand;
 import dev.dalol.Events.RWGame;
-import dev.dalol.Events.Verify;
 import dev.dalol.Rules.Grundgesetze;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
@@ -28,7 +27,7 @@ public class Main {
                 .load();
 
         JDA jda = JDABuilder.createDefault(dotenv.get("TOKEN"))
-                .addEventListeners(new Grundgesetze(), new CasinoAnleitung(), new Creator(), new JoinEvent(), new LinkDisabler(), new Verify(), new UmfragenCommand(), new Update(), new Info(), new YouTubeCommand(), new RWGame(), new LiveCommand())
+                .addEventListeners(new Grundgesetze(), new CasinoAnleitung(), new Creator(), new JoinEvent(), new LinkDisabler(), new UmfragenCommand(), new Update(), new Info(), new YouTubeCommand(), new RWGame(), new LiveCommand())
                 .setStatus(OnlineStatus.ONLINE)
                 .setActivity(Activity.of(STREAMING, "Pinguindave auf YouTube", "https://www.youtube.com/watch?v=oG6sPBBVJvM"))
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
