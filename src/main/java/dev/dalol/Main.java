@@ -28,8 +28,8 @@ public class Main {
 
         JDA jda = JDABuilder.createDefault(dotenv.get("TOKEN"))
                 .addEventListeners(new Grundgesetze(), new CasinoAnleitung(), new Creator(), new JoinEvent(), new LinkDisabler(), new UmfragenCommand(), new Update(), new Info(), new YouTubeCommand(), new RWGame(), new LiveCommand())
-                .setStatus(OnlineStatus.ONLINE)
-                .setActivity(Activity.of(STREAMING, "Pinguindave auf YouTube", "https://www.youtube.com/watch?v=oG6sPBBVJvM"))
+                .setStatus(OnlineStatus.IDLE)
+                .setActivity(Activity.watching("rework"))
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .build();
 
